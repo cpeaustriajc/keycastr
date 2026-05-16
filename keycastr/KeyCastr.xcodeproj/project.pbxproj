@@ -3,1403 +3,582 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		324AD25E40F9EFA6F54FA36A /* KCKeycastrEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 324AD6721F5E3C6D50AE104A /* KCKeycastrEvent.h */; };
-		324AD36C18A447EB8EDCE7B7 /* KCDefaultVisualizer.nib in Resources */ = {isa = PBXBuildFile; fileRef = 324AD93D2D9827CC6B6996A8 /* KCDefaultVisualizer.nib */; };
-		324AD7AC994A031550F38591 /* KCKeycastrEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 324ADBA0D37774E36EA35A2E /* KCKeycastrEvent.m */; };
-		324AD844390E162E4229CD1B /* KCDefaultVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 324ADC930C7D14543CCB1327 /* KCDefaultVisualizer.m */; };
-		324ADBB15522719676E80D5F /* KCMouseEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 324ADE9FD592FD181805CDF3 /* KCMouseEvent.h */; };
-		324ADBC2EAD3FC5FD3C369FE /* KCMouseEventVisualizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 324AD07485304123A4E743E0 /* KCMouseEventVisualizer.h */; };
-		324ADBCB6A0995C04527E1D8 /* NSBezierPath+RoundedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 324AD5B73A2BC2916E285219 /* NSBezierPath+RoundedRect.m */; };
-		324ADDDF7A11FD8A03BE1995 /* KCMouseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 324ADE0BF78E9FB58C02F49B /* KCMouseEvent.m */; };
-		324ADE7F91EC0CAFD38BA4BA /* KCMouseEventVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 324ADDDFBC424496DA228C39 /* KCMouseEventVisualizer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3D1640500F3BCC6900CA65AD /* KeyCastrStatusItemActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D16404E0F3BCC6900CA65AD /* KeyCastrStatusItemActive.png */; };
-		3D1640510F3BCC6900CA65AD /* KeyCastrStatusItemInactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D16404F0F3BCC6900CA65AD /* KeyCastrStatusItemInactive.png */; };
-		3D1640600F3BCEC900CA65AD /* KeyCastrInactive.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3D16405F0F3BCEC900CA65AD /* KeyCastrInactive.icns */; };
-		3D1646690F43D76D00CA65AD /* KCDefaultVisualizer.kcplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D16465A0F43D6E700CA65AD /* KCDefaultVisualizer.kcplugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		3D1646C20F43DC4700CA65AD /* KCVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F54DE0F31448A001C7272 /* KCVisualizer.m */; };
-		3D1646C30F43DC4700CA65AD /* KCVisualizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3F54DD0F31448A001C7272 /* KCVisualizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D1646C40F43DC4C00CA65AD /* KCKeystroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC314700F33EEF400B67D65 /* KCKeystroke.m */; };
-		3D1646C50F43DC4C00CA65AD /* KCKeystroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC3146F0F33EEF400B67D65 /* KCKeystroke.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D1646C60F43DC5000CA65AD /* KCEventTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1645DD0F43CD0600CA65AD /* KCEventTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D1646C70F43DC5100CA65AD /* KCEventTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1645DE0F43CD0600CA65AD /* KCEventTransformer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3D1646CB0F43DC6D00CA65AD /* KCVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */; };
-		3D1646D10F43DCA700CA65AD /* KCVisualizer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		3D1646EB0F43DD3000CA65AD /* KCAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F52550F300389001C7272 /* KCAppController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3D1646F40F43DD8300CA65AD /* KCVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */; };
-		3D1648B70F451D8000CA65AD /* KCVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */; };
-		3D1648B90F451DAA00CA65AD /* Svelte.nib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1648B80F451DAA00CA65AD /* Svelte.nib */; };
-		3D1648BC0F451DC300CA65AD /* SvelteVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1648BB0F451DC300CA65AD /* SvelteVisualizer.m */; };
-		3D1648C20F451EDB00CA65AD /* Svelte.kcplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D1648AC0F451D4500CA65AD /* Svelte.kcplugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		3D3F52A70F30BF1E001C7272 /* KeyCastr.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3D3F52A60F30BF1E001C7272 /* KeyCastr.icns */; };
-		3D3F52BA0F30C68B001C7272 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3F52B90F30C68B001C7272 /* Quartz.framework */; };
-		3D3F52EB0F30CB13001C7272 /* KCPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F52EA0F30CB13001C7272 /* KCPrefsWindowController.m */; };
-		3D3F540C0F30E8E7001C7272 /* KCEventTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F540B0F30E8E7001C7272 /* KCEventTap.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		3D3F548A0F30F37E001C7272 /* GeneralIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3D3F54870F30F37E001C7272 /* GeneralIcon.tif */; };
-		3D3F548B0F30F37E001C7272 /* DisplayIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3D3F54880F30F37E001C7272 /* DisplayIcon.tif */; };
-		3D3F548E0F30F3C7001C7272 /* UpdateIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 3D3F548D0F30F3C7001C7272 /* UpdateIcon.tif */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		AE39388B1BB73B36005458A6 /* KeyCastrStatusItem.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3938871BB73B36005458A6 /* KeyCastrStatusItem.png */; };
-		AE39388C1BB73B36005458A6 /* KeyCastrStatusItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3938881BB73B36005458A6 /* KeyCastrStatusItem@2x.png */; };
-		AE39388D1BB73B36005458A6 /* KeyCastrStatusItemActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3938891BB73B36005458A6 /* KeyCastrStatusItemActive@2x.png */; };
-		AE39388E1BB73B36005458A6 /* KeyCastrStatusItemInactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE39388A1BB73B36005458A6 /* KeyCastrStatusItemInactive@2x.png */; };
-		AF1A0CFD2C22325A00E47433 /* KCDefaultVisualizer.kcplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D16465A0F43D6E700CA65AD /* KCDefaultVisualizer.kcplugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF1A0CFE2C22325A00E47433 /* Svelte.kcplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D1648AC0F451D4500CA65AD /* Svelte.kcplugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF20BE732C1E21B3008B758E /* KCDefaultVisualizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF20BE722C1E21B3008B758E /* KCDefaultVisualizerTests.m */; };
-		AF408C1C258710E70010C0EF /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DD4032586E03A00EDC9D4 /* ShortcutRecorder.framework */; };
-		AF408C1D258710E70010C0EF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6DD41C2586E04C00EDC9D4 /* Sparkle.framework */; };
-		AF443C7225A115A1005C11AC /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF6DD41C2586E04C00EDC9D4 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF443C7325A115A1005C11AC /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF6DD4032586E03A00EDC9D4 /* ShortcutRecorder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF5457292C0CDB2E00064C82 /* KCColorValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5457282C0CDB2E00064C82 /* KCColorValueTransformer.m */; };
-		AF54572A2C0CDB2E00064C82 /* KCColorValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = AF5457272C0CDB2E00064C82 /* KCColorValueTransformer.h */; };
-		AF546FAC272DFFBE00EA6AFD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF546FAB272DFFBE00EA6AFD /* Carbon.framework */; };
-		AF6B80EB25AA7ACE00C6FA9D /* KeyCastrAbout.qtz in Resources */ = {isa = PBXBuildFile; fileRef = AF6B80D925AA7ACE00C6FA9D /* KeyCastrAbout.qtz */; };
-		AF7B1CF32C22376100C8C145 /* NSUserDefaults+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F56CA0F337533001C7272 /* NSUserDefaults+Utility.m */; };
-		AF7C0341271F694500CE1F8D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7C0340271F694500CE1F8D /* QuartzCore.framework */; };
-		AFAA2BB82A991B39007C7BAA /* KCMouseEventVisualizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAA2BB72A991B39007C7BAA /* KCMouseEventVisualizerTests.m */; };
-		AFC1721C2377CFF500292155 /* KCKeystrokeConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC1721B2377CFF500292155 /* KCKeystrokeConversionTests.m */; };
-		AFC1721E2377CFF500292155 /* KCVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */; };
-		AFF68CA12C05480600B98D92 /* KCUserDefaultsMigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF68CA02C05480600B98D92 /* KCUserDefaultsMigrationTests.m */; };
-		AFF68CBA2C05776000B98D92 /* KCUserDefaultsMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF68CB92C05776000B98D92 /* KCUserDefaultsMigration.m */; };
-		AFF68CBB2C05776000B98D92 /* KCUserDefaultsMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF68CB82C05776000B98D92 /* KCUserDefaultsMigration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		092AAAFD7308DCA2ADBF60C2 /* Visualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A64E23EC423E98958910CBB /* Visualizer.framework */; };
+		22CD39AFA7F346E340D4F13A /* SvelteVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49883DFF8980253B65124888 /* SvelteVisualizer.swift */; };
+		2DE6DE3409E958A37EDE549B /* Visualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A64E23EC423E98958910CBB /* Visualizer.framework */; };
+		3160AA0560CCD3C0E5693037 /* KeycastrEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776102368071804A6E43C8A2 /* KeycastrEvent.swift */; };
+		394BA121FDCAFED80B09381C /* Visualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A64E23EC423E98958910CBB /* Visualizer.framework */; };
+		68B0C925A89BC5D12684A1A8 /* DefaultVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ED0D37FE6EFAD2B7146F57 /* DefaultVisualizer.swift */; };
+		698D177C868A009D4AC4CA90 /* UserDefaultsMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59B95CE8E10F2064B9D1EF /* UserDefaultsMigrationTests.swift */; };
+		7A8CB3ECAAE3FC6DB4804939 /* SvelteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49F3125CBE2FAF0C70208F /* SvelteView.swift */; };
+		7ED96767853533AE70A2B3FD /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DB97D19A1994540AE3AD7 /* PreferencesWindowController.swift */; };
+		9463D0BAF025423138C1466B /* VisualizerRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF2391965818DCFD72053E /* VisualizerRegistry.swift */; };
+		97FC8FC1EF466CC69BE4AE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D5213A7F930603DD6C19EB /* Assets.xcassets */; };
+		98B00013CE8D3BA97AAA2F75 /* KeystrokeConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C397CA45D9B37D1BD3852 /* KeystrokeConversionTests.swift */; };
+		A9142FD1BB762031255A0B4E /* BezelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B84922B8519929DA9CA4E1 /* BezelWindow.swift */; };
+		AC007C41BD53A9E9204D2A98 /* SvelteVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49883DFF8980253B65124888 /* SvelteVisualizer.swift */; };
+		B025A1920BD83964A77361A4 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017B908C89B877FABEBAE74 /* App.swift */; };
+		B24908CA656F9F826F482B98 /* MouseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905FFC0BA88B9246923135F /* MouseEvent.swift */; };
+		B5D39A9C4C3745F966FA0F06 /* DefaultVisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AE58760B3BD638B76AD0D /* DefaultVisualizerTests.swift */; };
+		B6F96B4FF7434895FE6C77A9 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C8E20C6D75878988F71B9B /* AppController.swift */; };
+		BC14C3A915D7AEF917CE824A /* EventTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EA011AAA89F9C06D13897 /* EventTransformer.swift */; };
+		BCF871FFE6CF9D117E7DBCB2 /* SvelteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49F3125CBE2FAF0C70208F /* SvelteView.swift */; };
+		BD5A8A6BF80D896165B81209 /* Keystroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4402CA89E1526A384A8CB /* Keystroke.swift */; };
+		D726825B6E36CA516BFEDC6D /* Visualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A64E23EC423E98958910CBB /* Visualizer.framework */; };
+		DB819D87026340E48925CDF1 /* Visualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A64E23EC423E98958910CBB /* Visualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0B6738603A71987F5613E8E /* BezelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B84922B8519929DA9CA4E1 /* BezelWindow.swift */; };
+		EBDB05F01BCE9A963D37664B /* DefaultVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ED0D37FE6EFAD2B7146F57 /* DefaultVisualizer.swift */; };
+		EDE21513A424DAF2A79A8FA0 /* MouseEventVisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A3B4FE27E39D327951869 /* MouseEventVisualizerTests.swift */; };
+		EE76971DC34F3D767E2AF2B7 /* UserDefaultsMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EAE4C4CC62F9CF27ABB481 /* UserDefaultsMigration.swift */; };
+		EF13773B009B8C5F604B94CB /* EventTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F20A04FB9FEB4D22DD43B /* EventTap.swift */; };
+		F78C1E440F05A1E8CA7A3162 /* MouseEventVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEC491ECF19EA25C4815EA7 /* MouseEventVisualizer.swift */; };
+		FE4727FD240E7C156B11F213 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F872C5AD8670AFD5E75BCA13 /* Visualizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D1646D40F43DCB200CA65AD /* PBXContainerItemProxy */ = {
+		0FB8DCA1CFD456A4D8EDAF3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			containerPortal = 7AB83407E004EDD0EDBCC46F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D1646B50F43DBD700CA65AD;
-			remoteInfo = KCVisualizer;
+			remoteGlobalIDString = 9627C29F6E47FC6DD39C59CA;
+			remoteInfo = Visualizer;
 		};
-		3D1646D60F43DCB700CA65AD /* PBXContainerItemProxy */ = {
+		38ACC022535A4530F1341A01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			containerPortal = 7AB83407E004EDD0EDBCC46F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D1646B50F43DBD700CA65AD;
-			remoteInfo = KCVisualizer;
+			remoteGlobalIDString = 9627C29F6E47FC6DD39C59CA;
+			remoteInfo = Visualizer;
 		};
-		3D1648B40F451D6F00CA65AD /* PBXContainerItemProxy */ = {
+		45684427F9F9619DA7A4CBBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			containerPortal = 7AB83407E004EDD0EDBCC46F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D1646B50F43DBD700CA65AD;
-			remoteInfo = KCVisualizer;
-		};
-		AF0FB730274874C4001B292E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD3FC2586E03A00EDC9D4 /* ShortcutRecorder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BAC79C07216FCE8E00E45F23;
-			remoteInfo = Inspector;
-		};
-		AF0FB732274874C4001B292E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD3FC2586E03A00EDC9D4 /* ShortcutRecorder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BA722EC52161619200EFF192;
-			remoteInfo = "Unit Tests";
-		};
-		AF2B004B287B84DD00309761 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 726E07AD1CAF08D6001A286B;
-			remoteInfo = SparkleInstallerLauncher;
-		};
-		AF2B004D287B84DD00309761 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 724BB36C1D31D0B7005D534A;
-			remoteInfo = SparkleInstallerConnection;
-		};
-		AF2B004F287B84DD00309761 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 724BB3931D333832005D534A;
-			remoteInfo = SparkleInstallerStatus;
-		};
-		AF2B0051287B84DD00309761 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 726E07EF1CAF37BD001A286B;
-			remoteInfo = SparkleDownloader;
-		};
-		AF2B0053287B84DD00309761 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 726E4A161C86C88F00C57C6A;
-			remoteInfo = TestAppHelper;
-		};
-		AF2B0055287B84DD00309761 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 72D9549E1CBB415B006F28BD;
-			remoteInfo = "sparkle-cli";
-		};
-		AF2B0057287B84DD00309761 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 721C24451CB753E6005440CB;
-			remoteInfo = "Installer Progress";
-		};
-		AF6DD4022586E03A00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD3FC2586E03A00EDC9D4 /* ShortcutRecorder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 939837800DA42965007F53F3;
-			remoteInfo = ShortcutRecorder.framework;
-		};
-		AF6DD41B2586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = Sparkle;
-		};
-		AF6DD41D2586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 61B5F90209C4CEE200B25A18;
-			remoteInfo = "Sparkle Test App";
-		};
-		AF6DD41F2586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 612279D90DB5470200AB99EA;
-			remoteInfo = "Sparkle Unit Tests";
-		};
-		AF6DD4212586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5D06E8D00FD68C7C005AE3F6;
-			remoteInfo = BinaryDelta;
-		};
-		AF6DD4232586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55C14BB7136EEF1500649790;
-			remoteInfo = Autoupdate;
-		};
-		AF6DD4252586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 726B2B5D1C645FC900388755;
-			remoteInfo = "UI Tests";
-		};
-		AF6DD4292586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AE13FB31E0D9E07000D2C2C;
-			remoteInfo = generate_appcast;
-		};
-		AF6DD42B2586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AB8F19F214DA72000A1187F;
-			remoteInfo = generate_keys;
-		};
-		AF6DD42D2586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5A5ADED7214EDE4900DF0099;
-			remoteInfo = sign_update;
-		};
-		AF6DD42F2586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA4311EA229D651300A5503D;
-			remoteInfo = bsdiff;
-		};
-		AF6DD4312586E04C00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA4311A0229D5FBC00A5503D;
-			remoteInfo = ed25519;
-		};
-		AF6DD4332586E0A700EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = Sparkle;
-		};
-		AF6DD4362586E0BA00EDC9D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF6DD3FC2586E03A00EDC9D4 /* ShortcutRecorder.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9398377F0DA42965007F53F3;
-			remoteInfo = ShortcutRecorder.framework;
-		};
-		AF7B1CF82C22647700C8C145 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D1646590F43D6E700CA65AD;
-			remoteInfo = KCDefaultVisualizer;
-		};
-		AF7B1CFA2C22647700C8C145 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D1648AB0F451D4500CA65AD;
+			remoteGlobalIDString = 81294CA39D5300A0C1CADDFE;
 			remoteInfo = Svelte;
 		};
-		AF7B1CFC2C22648800C8C145 /* PBXContainerItemProxy */ = {
+		7E00594BE51829DD11BA1DE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			containerPortal = 7AB83407E004EDD0EDBCC46F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D1646590F43D6E700CA65AD;
+			remoteGlobalIDString = 9627C29F6E47FC6DD39C59CA;
+			remoteInfo = Visualizer;
+		};
+		9D8C2F4C8FAB8ADF988C84FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB83407E004EDD0EDBCC46F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F583883AB72367CC8BBBF8AF;
 			remoteInfo = KCDefaultVisualizer;
 		};
-		AF7B1CFE2C22648800C8C145 /* PBXContainerItemProxy */ = {
+		A3F1F2982A0E8151911777B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			containerPortal = 7AB83407E004EDD0EDBCC46F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D1648AB0F451D4500CA65AD;
-			remoteInfo = Svelte;
-		};
-		AFC1721F2377CFF500292155 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D1646B50F43DBD700CA65AD;
-			remoteInfo = KCVisualizer;
+			remoteGlobalIDString = 9627C29F6E47FC6DD39C59CA;
+			remoteInfo = Visualizer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3D1646710F43D79600CA65AD /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				3D1648C20F451EDB00CA65AD /* Svelte.kcplugin in CopyFiles */,
-				3D1646690F43D76D00CA65AD /* KCDefaultVisualizer.kcplugin in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D3F56500F32D308001C7272 /* CopyFiles */ = {
+		1243BE470B815109D1739E26 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AF443C7225A115A1005C11AC /* Sparkle.framework in CopyFiles */,
-				AF443C7325A115A1005C11AC /* ShortcutRecorder.framework in CopyFiles */,
-				3D1646D10F43DCA700CA65AD /* KCVisualizer.framework in CopyFiles */,
+				DB819D87026340E48925CDF1 /* Visualizer.framework in Embed Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF20BE8F2C1E27C4008B758E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				AF1A0CFD2C22325A00E47433 /* KCDefaultVisualizer.kcplugin in CopyFiles */,
-				AF1A0CFE2C22325A00E47433 /* Svelte.kcplugin in CopyFiles */,
-			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		324AD04AB4EBA23C2B0E55BE /* KCDefaultVisualizer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "KCDefaultVisualizer-Info.plist"; sourceTree = "<group>"; };
-		324AD07485304123A4E743E0 /* KCMouseEventVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMouseEventVisualizer.h; sourceTree = SOURCE_ROOT; };
-		324AD08A82A3657D73DC13DF /* KCDefaultVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDefaultVisualizer.h; sourceTree = "<group>"; };
-		324AD5B73A2BC2916E285219 /* NSBezierPath+RoundedRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+RoundedRect.m"; sourceTree = "<group>"; };
-		324AD6721F5E3C6D50AE104A /* KCKeycastrEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCKeycastrEvent.h; sourceTree = "<group>"; };
-		324AD93D2D9827CC6B6996A8 /* KCDefaultVisualizer.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = KCDefaultVisualizer.nib; sourceTree = "<group>"; };
-		324ADA987B1C0B9D0D36CBDF /* NSBezierPath+RoundedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+RoundedRect.h"; sourceTree = "<group>"; };
-		324ADBA0D37774E36EA35A2E /* KCKeycastrEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCKeycastrEvent.m; sourceTree = "<group>"; };
-		324ADC930C7D14543CCB1327 /* KCDefaultVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDefaultVisualizer.m; sourceTree = "<group>"; };
-		324ADDDFBC424496DA228C39 /* KCMouseEventVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMouseEventVisualizer.m; sourceTree = SOURCE_ROOT; };
-		324ADE0BF78E9FB58C02F49B /* KCMouseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMouseEvent.m; sourceTree = "<group>"; };
-		324ADE9FD592FD181805CDF3 /* KCMouseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMouseEvent.h; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* KeyCastr_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCastr_Prefix.pch; sourceTree = "<group>"; };
-		3D16404E0F3BCC6900CA65AD /* KeyCastrStatusItemActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyCastrStatusItemActive.png; sourceTree = "<group>"; };
-		3D16404F0F3BCC6900CA65AD /* KeyCastrStatusItemInactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyCastrStatusItemInactive.png; sourceTree = "<group>"; };
-		3D16405F0F3BCEC900CA65AD /* KeyCastrInactive.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = KeyCastrInactive.icns; sourceTree = "<group>"; };
-		3D1645DD0F43CD0600CA65AD /* KCEventTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCEventTransformer.h; sourceTree = "<group>"; };
-		3D1645DE0F43CD0600CA65AD /* KCEventTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCEventTransformer.m; sourceTree = "<group>"; };
-		3D16465A0F43D6E700CA65AD /* KCDefaultVisualizer.kcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCDefaultVisualizer.kcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KCVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1646B70F43DBD700CA65AD /* KCVisualizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KCVisualizer-Info.plist"; sourceTree = "<group>"; };
-		3D1648AC0F451D4500CA65AD /* Svelte.kcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Svelte.kcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1648AD0F451D4500CA65AD /* Svelte-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Svelte-Info.plist"; sourceTree = "<group>"; };
-		3D1648B80F451DAA00CA65AD /* Svelte.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Svelte.nib; sourceTree = "<group>"; };
-		3D1648BA0F451DC300CA65AD /* SvelteVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvelteVisualizer.h; sourceTree = "<group>"; };
-		3D1648BB0F451DC300CA65AD /* SvelteVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvelteVisualizer.m; sourceTree = "<group>"; };
-		3D3F52540F300389001C7272 /* KCAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAppController.h; sourceTree = "<group>"; };
-		3D3F52550F300389001C7272 /* KCAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAppController.m; sourceTree = "<group>"; };
-		3D3F52A60F30BF1E001C7272 /* KeyCastr.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = KeyCastr.icns; sourceTree = "<group>"; };
-		3D3F52B90F30C68B001C7272 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
-		3D3F52E90F30CB13001C7272 /* KCPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPrefsWindowController.h; sourceTree = "<group>"; };
-		3D3F52EA0F30CB13001C7272 /* KCPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPrefsWindowController.m; sourceTree = "<group>"; };
-		3D3F540A0F30E8E7001C7272 /* KCEventTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCEventTap.h; sourceTree = "<group>"; };
-		3D3F540B0F30E8E7001C7272 /* KCEventTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCEventTap.m; sourceTree = "<group>"; };
-		3D3F54870F30F37E001C7272 /* GeneralIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GeneralIcon.tif; sourceTree = "<group>"; };
-		3D3F54880F30F37E001C7272 /* DisplayIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DisplayIcon.tif; sourceTree = "<group>"; };
-		3D3F548D0F30F3C7001C7272 /* UpdateIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = UpdateIcon.tif; sourceTree = "<group>"; };
-		3D3F54DD0F31448A001C7272 /* KCVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCVisualizer.h; sourceTree = "<group>"; };
-		3D3F54DE0F31448A001C7272 /* KCVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCVisualizer.m; sourceTree = "<group>"; };
-		3D3F56C90F337533001C7272 /* NSUserDefaults+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Utility.h"; sourceTree = "<group>"; };
-		3D3F56CA0F337533001C7272 /* NSUserDefaults+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Utility.m"; sourceTree = "<group>"; };
-		3DC3146F0F33EEF400B67D65 /* KCKeystroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCKeystroke.h; sourceTree = "<group>"; };
-		3DC314700F33EEF400B67D65 /* KCKeystroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCKeystroke.m; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* KeyCastr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyCastr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE3938871BB73B36005458A6 /* KeyCastrStatusItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyCastrStatusItem.png; sourceTree = "<group>"; };
-		AE3938881BB73B36005458A6 /* KeyCastrStatusItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyCastrStatusItem@2x.png"; sourceTree = "<group>"; };
-		AE3938891BB73B36005458A6 /* KeyCastrStatusItemActive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyCastrStatusItemActive@2x.png"; sourceTree = "<group>"; };
-		AE39388A1BB73B36005458A6 /* KeyCastrStatusItemInactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KeyCastrStatusItemInactive@2x.png"; sourceTree = "<group>"; };
-		AF20BE722C1E21B3008B758E /* KCDefaultVisualizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCDefaultVisualizerTests.m; sourceTree = "<group>"; };
-		AF5457272C0CDB2E00064C82 /* KCColorValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCColorValueTransformer.h; sourceTree = "<group>"; };
-		AF5457282C0CDB2E00064C82 /* KCColorValueTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCColorValueTransformer.m; sourceTree = "<group>"; };
-		AF5457412C0CE25700064C82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF5457422C0CE26D00064C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		AF546FAB272DFFBE00EA6AFD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		AF6B80D925AA7ACE00C6FA9D /* KeyCastrAbout.qtz */ = {isa = PBXFileReference; lastKnownFileType = "video.quartz-composer"; path = KeyCastrAbout.qtz; sourceTree = "<group>"; };
-		AF6DD3FC2586E03A00EDC9D4 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ShortcutRecorder/ShortcutRecorder.xcodeproj; sourceTree = "<group>"; };
-		AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
-		AF7C0340271F694500CE1F8D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		AFAA2BB72A991B39007C7BAA /* KCMouseEventVisualizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCMouseEventVisualizerTests.m; sourceTree = "<group>"; };
-		AFB1F705235BC9AB0092F4A9 /* KeyCastr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyCastr.entitlements; sourceTree = "<group>"; };
-		AFC172192377CFF500292155 /* KCVisualizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCVisualizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFC1721B2377CFF500292155 /* KCKeystrokeConversionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCKeystrokeConversionTests.m; sourceTree = "<group>"; };
-		AFC1721D2377CFF500292155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFF68CA02C05480600B98D92 /* KCUserDefaultsMigrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCUserDefaultsMigrationTests.m; sourceTree = "<group>"; };
-		AFF68CB82C05776000B98D92 /* KCUserDefaultsMigration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCUserDefaultsMigration.h; sourceTree = "<group>"; };
-		AFF68CB92C05776000B98D92 /* KCUserDefaultsMigration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCUserDefaultsMigration.m; sourceTree = "<group>"; };
+		00BF2391965818DCFD72053E /* VisualizerRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizerRegistry.swift; sourceTree = "<group>"; };
+		168EA011AAA89F9C06D13897 /* EventTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTransformer.swift; sourceTree = "<group>"; };
+		4017B908C89B877FABEBAE74 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		49883DFF8980253B65124888 /* SvelteVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvelteVisualizer.swift; sourceTree = "<group>"; };
+		49D5213A7F930603DD6C19EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		617AE58760B3BD638B76AD0D /* DefaultVisualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVisualizerTests.swift; sourceTree = "<group>"; };
+		68EAE4C4CC62F9CF27ABB481 /* UserDefaultsMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsMigration.swift; sourceTree = "<group>"; };
+		6B8F20A04FB9FEB4D22DD43B /* EventTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTap.swift; sourceTree = "<group>"; };
+		776102368071804A6E43C8A2 /* KeycastrEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycastrEvent.swift; sourceTree = "<group>"; };
+		7D9A3B4FE27E39D327951869 /* MouseEventVisualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEventVisualizerTests.swift; sourceTree = "<group>"; };
+		8A64E23EC423E98958910CBB /* Visualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Visualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.kcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCDefaultVisualizer.kcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F59B95CE8E10F2064B9D1EF /* UserDefaultsMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsMigrationTests.swift; sourceTree = "<group>"; };
+		90B84922B8519929DA9CA4E1 /* BezelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWindow.swift; sourceTree = "<group>"; };
+		99C8E20C6D75878988F71B9B /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		9B8DB97D19A1994540AE3AD7 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		B26C397CA45D9B37D1BD3852 /* KeystrokeConversionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystrokeConversionTests.swift; sourceTree = "<group>"; };
+		B3B64671602DB0E3910EEA3D /* KeyCastr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyCastr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9ED0D37FE6EFAD2B7146F57 /* DefaultVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVisualizer.swift; sourceTree = "<group>"; };
+		BB6E2F89CB468E42BF5721EF /* Svelte.kcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Svelte.kcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF49F3125CBE2FAF0C70208F /* SvelteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvelteView.swift; sourceTree = "<group>"; };
+		E382CC61CD9A7DE9D4658E7F /* KeyCastrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyCastrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E905FFC0BA88B9246923135F /* MouseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEvent.swift; sourceTree = "<group>"; };
+		EDEC491ECF19EA25C4815EA7 /* MouseEventVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEventVisualizer.swift; sourceTree = "<group>"; };
+		F872C5AD8670AFD5E75BCA13 /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		FEF4402CA89E1526A384A8CB /* Keystroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keystroke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3D1646580F43D6E700CA65AD /* Frameworks */ = {
+		08D04E9A426FD791D81CD2B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1646CB0F43DC6D00CA65AD /* KCVisualizer.framework in Frameworks */,
+				394BA121FDCAFED80B09381C /* Visualizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D1646B40F43DBD700CA65AD /* Frameworks */ = {
+		22F9B07DC192537A48890C69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF546FAC272DFFBE00EA6AFD /* Carbon.framework in Frameworks */,
-				AF7C0341271F694500CE1F8D /* QuartzCore.framework in Frameworks */,
+				092AAAFD7308DCA2ADBF60C2 /* Visualizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D1648AA0F451D4500CA65AD /* Frameworks */ = {
+		47710AAE8A76CEB77BFB81B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1648B70F451D8000CA65AD /* KCVisualizer.framework in Frameworks */,
+				D726825B6E36CA516BFEDC6D /* Visualizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D11072E0486CEB800E47090 /* Frameworks */ = {
+		EDE4B809F7A7E52438358AB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				3D3F52BA0F30C68B001C7272 /* Quartz.framework in Frameworks */,
-				3D1646F40F43DD8300CA65AD /* KCVisualizer.framework in Frameworks */,
-				AF408C1D258710E70010C0EF /* Sparkle.framework in Frameworks */,
-				AF408C1C258710E70010C0EF /* ShortcutRecorder.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFC172162377CFF500292155 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFC1721E2377CFF500292155 /* KCVisualizer.framework in Frameworks */,
+				2DE6DE3409E958A37EDE549B /* Visualizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Application */ = {
+		3D0461B3EED0872D9C14149A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D1648930F43DE7A00CA65AD /* Headers */,
-				3D3F52550F300389001C7272 /* KCAppController.m */,
-				3D3F540B0F30E8E7001C7272 /* KCEventTap.m */,
-				3D3F52EA0F30CB13001C7272 /* KCPrefsWindowController.m */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-			);
-			name = Application;
-			sourceTree = "<group>";
-		};
-		19C28FACFE9D520D11CA2CBB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8D1107320486CEB800E47090 /* KeyCastr.app */,
-				3D16465A0F43D6E700CA65AD /* KCDefaultVisualizer.kcplugin */,
-				3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */,
-				3D1648AC0F451D4500CA65AD /* Svelte.kcplugin */,
-				AFC172192377CFF500292155 /* KCVisualizerTests.xctest */,
+				8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.kcplugin */,
+				B3B64671602DB0E3910EEA3D /* KeyCastr.app */,
+				E382CC61CD9A7DE9D4658E7F /* KeyCastrTests.xctest */,
+				BB6E2F89CB468E42BF5721EF /* Svelte.kcplugin */,
+				8A64E23EC423E98958910CBB /* Visualizer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* KeyCastr */ = {
+		3D08DA4F740D7FC484812F76 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				AFB1F705235BC9AB0092F4A9 /* KeyCastr.entitlements */,
-				3D1646530F43D6B800CA65AD /* Visualizers */,
-				3D1646FC0F43DDC100CA65AD /* Framework */,
-				080E96DDFE201D6D7F000001 /* Application */,
-				AFC1721A2377CFF500292155 /* KCVisualizerTests */,
-				AF6DD3FB2586E00500EDC9D4 /* Externals */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
+				5474B5D6BDB939AE5F4D021B /* DefaultVisualizer */,
+				50CDC0407D422732BBC79871 /* Svelte */,
 			);
-			name = KeyCastr;
+			path = Plugins;
 			sourceTree = "<group>";
 		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
+		50CDC0407D422732BBC79871 /* Svelte */ = {
 			isa = PBXGroup;
 			children = (
-				AF6B80D925AA7ACE00C6FA9D /* KeyCastrAbout.qtz */,
-				AE3938871BB73B36005458A6 /* KeyCastrStatusItem.png */,
-				AE3938881BB73B36005458A6 /* KeyCastrStatusItem@2x.png */,
-				AE3938891BB73B36005458A6 /* KeyCastrStatusItemActive@2x.png */,
-				AE39388A1BB73B36005458A6 /* KeyCastrStatusItemInactive@2x.png */,
-				3D16404E0F3BCC6900CA65AD /* KeyCastrStatusItemActive.png */,
-				3D16404F0F3BCC6900CA65AD /* KeyCastrStatusItemInactive.png */,
-				3D3F548D0F30F3C7001C7272 /* UpdateIcon.tif */,
-				3D3F54870F30F37E001C7272 /* GeneralIcon.tif */,
-				3D3F54880F30F37E001C7272 /* DisplayIcon.tif */,
-				3D3F52A60F30BF1E001C7272 /* KeyCastr.icns */,
-				3D16405F0F3BCEC900CA65AD /* KeyCastrInactive.icns */,
-				8D1107310486CEB800E47090 /* Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				CF49F3125CBE2FAF0C70208F /* SvelteView.swift */,
+				49883DFF8980253B65124888 /* SvelteVisualizer.swift */,
 			);
-			name = Resources;
+			path = Svelte;
 			sourceTree = "<group>";
 		};
-		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+		5474B5D6BDB939AE5F4D021B /* DefaultVisualizer */ = {
 			isa = PBXGroup;
 			children = (
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
-				AF546FAB272DFFBE00EA6AFD /* Carbon.framework */,
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				3D3F52B90F30C68B001C7272 /* Quartz.framework */,
-				AF7C0340271F694500CE1F8D /* QuartzCore.framework */,
+				90B84922B8519929DA9CA4E1 /* BezelWindow.swift */,
+				B9ED0D37FE6EFAD2B7146F57 /* DefaultVisualizer.swift */,
 			);
-			name = Frameworks;
+			path = DefaultVisualizer;
 			sourceTree = "<group>";
 		};
-		324AD7A5D37DE702839F52C6 /* Mouse */ = {
+		89A48A68F220141B20D22553 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				324AD07485304123A4E743E0 /* KCMouseEventVisualizer.h */,
-				324ADDDFBC424496DA228C39 /* KCMouseEventVisualizer.m */,
+				617AE58760B3BD638B76AD0D /* DefaultVisualizerTests.swift */,
+				B26C397CA45D9B37D1BD3852 /* KeystrokeConversionTests.swift */,
+				7D9A3B4FE27E39D327951869 /* MouseEventVisualizerTests.swift */,
+				8F59B95CE8E10F2064B9D1EF /* UserDefaultsMigrationTests.swift */,
 			);
-			name = Mouse;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		324ADFFC6CB5410AEFDEF479 /* Default */ = {
+		B68566638E10187CE1CC197A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				324AD04AB4EBA23C2B0E55BE /* KCDefaultVisualizer-Info.plist */,
-				324AD08A82A3657D73DC13DF /* KCDefaultVisualizer.h */,
-				324ADC930C7D14543CCB1327 /* KCDefaultVisualizer.m */,
-				324AD93D2D9827CC6B6996A8 /* KCDefaultVisualizer.nib */,
-				324ADA987B1C0B9D0D36CBDF /* NSBezierPath+RoundedRect.h */,
-				324AD5B73A2BC2916E285219 /* NSBezierPath+RoundedRect.m */,
+				49D5213A7F930603DD6C19EB /* Assets.xcassets */,
 			);
-			name = Default;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		3D1646530F43D6B800CA65AD /* Visualizers */ = {
+		C7530FA0D04D3BCA2601BBC9 = {
 			isa = PBXGroup;
 			children = (
-				3D1648A30F451CDA00CA65AD /* Svelte */,
-				324AD7A5D37DE702839F52C6 /* Mouse */,
-				324ADFFC6CB5410AEFDEF479 /* Default */,
+				CDE563F656E563D783DF1CC2 /* App */,
+				3D08DA4F740D7FC484812F76 /* Plugins */,
+				B68566638E10187CE1CC197A /* Resources */,
+				89A48A68F220141B20D22553 /* Tests */,
+				DE9E3C2FD93858BE8E43C767 /* Visualizer */,
+				3D0461B3EED0872D9C14149A /* Products */,
 			);
-			name = Visualizers;
 			sourceTree = "<group>";
 		};
-		3D1646FC0F43DDC100CA65AD /* Framework */ = {
+		CDE563F656E563D783DF1CC2 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				AF5457272C0CDB2E00064C82 /* KCColorValueTransformer.h */,
-				AF5457282C0CDB2E00064C82 /* KCColorValueTransformer.m */,
-				3D1645DD0F43CD0600CA65AD /* KCEventTransformer.h */,
-				3D1645DE0F43CD0600CA65AD /* KCEventTransformer.m */,
-				324AD6721F5E3C6D50AE104A /* KCKeycastrEvent.h */,
-				324ADBA0D37774E36EA35A2E /* KCKeycastrEvent.m */,
-				3DC3146F0F33EEF400B67D65 /* KCKeystroke.h */,
-				3DC314700F33EEF400B67D65 /* KCKeystroke.m */,
-				324ADE9FD592FD181805CDF3 /* KCMouseEvent.h */,
-				324ADE0BF78E9FB58C02F49B /* KCMouseEvent.m */,
-				AFF68CB82C05776000B98D92 /* KCUserDefaultsMigration.h */,
-				AFF68CB92C05776000B98D92 /* KCUserDefaultsMigration.m */,
-				3D1646B70F43DBD700CA65AD /* KCVisualizer-Info.plist */,
-				3D3F54DD0F31448A001C7272 /* KCVisualizer.h */,
-				3D3F54DE0F31448A001C7272 /* KCVisualizer.m */,
-				3D3F56C90F337533001C7272 /* NSUserDefaults+Utility.h */,
-				3D3F56CA0F337533001C7272 /* NSUserDefaults+Utility.m */,
+				4017B908C89B877FABEBAE74 /* App.swift */,
+				99C8E20C6D75878988F71B9B /* AppController.swift */,
+				9B8DB97D19A1994540AE3AD7 /* PreferencesWindowController.swift */,
 			);
-			name = Framework;
+			path = App;
 			sourceTree = "<group>";
 		};
-		3D1648930F43DE7A00CA65AD /* Headers */ = {
+		DE9E3C2FD93858BE8E43C767 /* Visualizer */ = {
 			isa = PBXGroup;
 			children = (
-				3D3F52540F300389001C7272 /* KCAppController.h */,
-				3D3F540A0F30E8E7001C7272 /* KCEventTap.h */,
-				3D3F52E90F30CB13001C7272 /* KCPrefsWindowController.h */,
-				32CA4F630368D1EE00C91783 /* KeyCastr_Prefix.pch */,
+				6B8F20A04FB9FEB4D22DD43B /* EventTap.swift */,
+				168EA011AAA89F9C06D13897 /* EventTransformer.swift */,
+				776102368071804A6E43C8A2 /* KeycastrEvent.swift */,
+				FEF4402CA89E1526A384A8CB /* Keystroke.swift */,
+				E905FFC0BA88B9246923135F /* MouseEvent.swift */,
+				EDEC491ECF19EA25C4815EA7 /* MouseEventVisualizer.swift */,
+				68EAE4C4CC62F9CF27ABB481 /* UserDefaultsMigration.swift */,
+				F872C5AD8670AFD5E75BCA13 /* Visualizer.swift */,
+				00BF2391965818DCFD72053E /* VisualizerRegistry.swift */,
 			);
-			name = Headers;
-			sourceTree = "<group>";
-		};
-		3D1648A30F451CDA00CA65AD /* Svelte */ = {
-			isa = PBXGroup;
-			children = (
-				3D1648AD0F451D4500CA65AD /* Svelte-Info.plist */,
-				3D1648B80F451DAA00CA65AD /* Svelte.nib */,
-				3D1648BA0F451DC300CA65AD /* SvelteVisualizer.h */,
-				3D1648BB0F451DC300CA65AD /* SvelteVisualizer.m */,
-			);
-			name = Svelte;
-			sourceTree = "<group>";
-		};
-		AF6DD3FB2586E00500EDC9D4 /* Externals */ = {
-			isa = PBXGroup;
-			children = (
-				AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */,
-				AF6DD3FC2586E03A00EDC9D4 /* ShortcutRecorder.xcodeproj */,
-			);
-			path = Externals;
-			sourceTree = "<group>";
-		};
-		AF6DD3FD2586E03A00EDC9D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AF0FB731274874C4001B292E /* Inspector.app */,
-				AF6DD4032586E03A00EDC9D4 /* ShortcutRecorder.framework */,
-				AF0FB733274874C4001B292E /* Unit Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AF6DD4092586E04C00EDC9D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AF6DD41C2586E04C00EDC9D4 /* Sparkle.framework */,
-				AF6DD4242586E04C00EDC9D4 /* Autoupdate */,
-				AF2B004C287B84DD00309761 /* Installer.xpc */,
-				AF2B004E287B84DD00309761 /* InstallerConnection.xpc */,
-				AF2B0050287B84DD00309761 /* InstallerStatus.xpc */,
-				AF2B0052287B84DD00309761 /* Downloader.xpc */,
-				AF6DD41E2586E04C00EDC9D4 /* Sparkle Test App.app */,
-				AF2B0054287B84DD00309761 /* TestAppHelper.xpc */,
-				AF6DD4202586E04C00EDC9D4 /* Sparkle Unit Tests.xctest */,
-				AF6DD4222586E04C00EDC9D4 /* BinaryDelta */,
-				AF2B0056287B84DD00309761 /* sparkle.app */,
-				AF2B0058287B84DD00309761 /* Updater.app */,
-				AF6DD4262586E04C00EDC9D4 /* UI Tests.xctest */,
-				AF6DD42A2586E04C00EDC9D4 /* generate_appcast */,
-				AF6DD42C2586E04C00EDC9D4 /* generate_keys */,
-				AF6DD42E2586E04C00EDC9D4 /* sign_update */,
-				AF6DD4302586E04C00EDC9D4 /* libbsdiff.a */,
-				AF6DD4322586E04C00EDC9D4 /* libed25519.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AFC1721A2377CFF500292155 /* KCVisualizerTests */ = {
-			isa = PBXGroup;
-			children = (
-				AFC1721D2377CFF500292155 /* Info.plist */,
-				AF20BE722C1E21B3008B758E /* KCDefaultVisualizerTests.m */,
-				AFC1721B2377CFF500292155 /* KCKeystrokeConversionTests.m */,
-				AFAA2BB72A991B39007C7BAA /* KCMouseEventVisualizerTests.m */,
-				AFF68CA02C05480600B98D92 /* KCUserDefaultsMigrationTests.m */,
-			);
-			path = KCVisualizerTests;
+			path = Visualizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		3D1646B10F43DBD700CA65AD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFF68CBB2C05776000B98D92 /* KCUserDefaultsMigration.h in Headers */,
-				3D1646C30F43DC4700CA65AD /* KCVisualizer.h in Headers */,
-				3D1646C50F43DC4C00CA65AD /* KCKeystroke.h in Headers */,
-				3D1646C60F43DC5000CA65AD /* KCEventTransformer.h in Headers */,
-				AF54572A2C0CDB2E00064C82 /* KCColorValueTransformer.h in Headers */,
-				324ADBC2EAD3FC5FD3C369FE /* KCMouseEventVisualizer.h in Headers */,
-				324ADBB15522719676E80D5F /* KCMouseEvent.h in Headers */,
-				324AD25E40F9EFA6F54FA36A /* KCKeycastrEvent.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		3D1646590F43D6E700CA65AD /* KCDefaultVisualizer */ = {
+		81294CA39D5300A0C1CADDFE /* Svelte */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D16465E0F43D6E800CA65AD /* Build configuration list for PBXNativeTarget "KCDefaultVisualizer" */;
+			buildConfigurationList = C68686FEC53004C46A7ADDB9 /* Build configuration list for PBXNativeTarget "Svelte" */;
 			buildPhases = (
-				3D1646560F43D6E700CA65AD /* Resources */,
-				3D1646570F43D6E700CA65AD /* Sources */,
-				3D1646580F43D6E700CA65AD /* Frameworks */,
+				7382D045FA06058B5B416323 /* Sources */,
+				22F9B07DC192537A48890C69 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D1646D70F43DCB700CA65AD /* PBXTargetDependency */,
-			);
-			name = KCDefaultVisualizer;
-			productName = KCDefaultVisualizer;
-			productReference = 3D16465A0F43D6E700CA65AD /* KCDefaultVisualizer.kcplugin */;
-			productType = "com.apple.product-type.bundle";
-		};
-		3D1646B50F43DBD700CA65AD /* KCVisualizer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D1646BA0F43DBD800CA65AD /* Build configuration list for PBXNativeTarget "KCVisualizer" */;
-			buildPhases = (
-				3D1646B10F43DBD700CA65AD /* Headers */,
-				3D1646B20F43DBD700CA65AD /* Resources */,
-				3D1646B30F43DBD700CA65AD /* Sources */,
-				3D1646B40F43DBD700CA65AD /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KCVisualizer;
-			productName = KCVisualizer;
-			productReference = 3D1646B60F43DBD700CA65AD /* KCVisualizer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3D1648AB0F451D4500CA65AD /* Svelte */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D1648B00F451D4500CA65AD /* Build configuration list for PBXNativeTarget "Svelte" */;
-			buildPhases = (
-				3D1648A80F451D4500CA65AD /* Resources */,
-				3D1648A90F451D4500CA65AD /* Sources */,
-				3D1648AA0F451D4500CA65AD /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D1648B50F451D6F00CA65AD /* PBXTargetDependency */,
+				0CA8787C823298B4DE7C6D1C /* PBXTargetDependency */,
 			);
 			name = Svelte;
+			packageProductDependencies = (
+			);
 			productName = Svelte;
-			productReference = 3D1648AC0F451D4500CA65AD /* Svelte.kcplugin */;
+			productReference = BB6E2F89CB468E42BF5721EF /* Svelte.kcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
-		8D1107260486CEB800E47090 /* KeyCastr */ = {
+		9627C29F6E47FC6DD39C59CA /* Visualizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "KeyCastr" */;
+			buildConfigurationList = CAF84F39C09A49498235F144 /* Build configuration list for PBXNativeTarget "Visualizer" */;
 			buildPhases = (
-				8D1107290486CEB800E47090 /* Resources */,
-				8D11072C0486CEB800E47090 /* Sources */,
-				8D11072E0486CEB800E47090 /* Frameworks */,
-				3D3F56500F32D308001C7272 /* CopyFiles */,
-				3D1646710F43D79600CA65AD /* CopyFiles */,
+				7E6987B2540FD65AA1EA5F16 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AF7B1CF92C22647700C8C145 /* PBXTargetDependency */,
-				AF7B1CFB2C22647700C8C145 /* PBXTargetDependency */,
-				AF6DD4372586E0BA00EDC9D4 /* PBXTargetDependency */,
-				AF6DD4342586E0A700EDC9D4 /* PBXTargetDependency */,
-				3D1646D50F43DCB200CA65AD /* PBXTargetDependency */,
+			);
+			name = Visualizer;
+			packageProductDependencies = (
+			);
+			productName = Visualizer;
+			productReference = 8A64E23EC423E98958910CBB /* Visualizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E00D75838BBF99FB415223AB /* KeyCastrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2AC94EF8508C968122BEE55 /* Build configuration list for PBXNativeTarget "KeyCastrTests" */;
+			buildPhases = (
+				8F7455D517CD1CFC094BFE28 /* Sources */,
+				EDE4B809F7A7E52438358AB0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8A3ED221DC469C3489130A5 /* PBXTargetDependency */,
+			);
+			name = KeyCastrTests;
+			packageProductDependencies = (
+			);
+			productName = KeyCastrTests;
+			productReference = E382CC61CD9A7DE9D4658E7F /* KeyCastrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F583883AB72367CC8BBBF8AF /* KCDefaultVisualizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FF9A78760B72909BD8EC3F4 /* Build configuration list for PBXNativeTarget "KCDefaultVisualizer" */;
+			buildPhases = (
+				F486EAA85DD683C6A79DFA04 /* Sources */,
+				47710AAE8A76CEB77BFB81B6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B5AA6C606B4C5B4B91EED82 /* PBXTargetDependency */,
+			);
+			name = KCDefaultVisualizer;
+			packageProductDependencies = (
+			);
+			productName = KCDefaultVisualizer;
+			productReference = 8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.kcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FE49104CC0F6239361197347 /* KeyCastr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814F94DBF576E5829652B241 /* Build configuration list for PBXNativeTarget "KeyCastr" */;
+			buildPhases = (
+				5FE5F51AADB27BFADB37F0F6 /* Sources */,
+				F2CA8F96F69CDDA82C44D85F /* Resources */,
+				08D04E9A426FD791D81CD2B3 /* Frameworks */,
+				1243BE470B815109D1739E26 /* Embed Frameworks */,
+				824A2C66A3BB810F4CB9FAF1 /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F9AFD55CFF1A2B9EAE8964 /* PBXTargetDependency */,
+				BC16396D60880F8899D79E9C /* PBXTargetDependency */,
+				4BBF9F04D570542B4DDBE242 /* PBXTargetDependency */,
 			);
 			name = KeyCastr;
-			productInstallPath = "$(HOME)/Applications";
+			packageProductDependencies = (
+			);
 			productName = KeyCastr;
-			productReference = 8D1107320486CEB800E47090 /* KeyCastr.app */;
+			productReference = B3B64671602DB0E3910EEA3D /* KeyCastr.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AFC172182377CFF500292155 /* KCVisualizerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AFC172212377CFF500292155 /* Build configuration list for PBXNativeTarget "KCVisualizerTests" */;
-			buildPhases = (
-				AFC172152377CFF500292155 /* Sources */,
-				AFC172162377CFF500292155 /* Frameworks */,
-				AFC172172377CFF500292155 /* Resources */,
-				AF20BE8F2C1E27C4008B758E /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF7B1CFD2C22648800C8C145 /* PBXTargetDependency */,
-				AF7B1CFF2C22648800C8C145 /* PBXTargetDependency */,
-				AFC172202377CFF500292155 /* PBXTargetDependency */,
-			);
-			name = KCVisualizerTests;
-			productName = KCVisualizerTests;
-			productReference = AFC172192377CFF500292155 /* KCVisualizerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29B97313FDCFA39411CA2CEA /* Project object */ = {
+		7AB83407E004EDD0EDBCC46F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
-					3D1646B50F43DBD700CA65AD = {
+					81294CA39D5300A0C1CADDFE = {
 						ProvisioningStyle = Automatic;
 					};
-					3D1648AB0F451D4500CA65AD = {
+					9627C29F6E47FC6DD39C59CA = {
 						ProvisioningStyle = Automatic;
 					};
-					AFC172182377CFF500292155 = {
-						CreatedOnToolsVersion = 11.2;
+					E00D75838BBF99FB415223AB = {
+						ProvisioningStyle = Automatic;
+					};
+					F583883AB72367CC8BBBF8AF = {
+						ProvisioningStyle = Automatic;
+					};
+					FE49104CC0F6239361197347 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "KeyCastr" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 18C462C6F16FFEFAA30F8A57 /* Build configuration list for PBXProject "KeyCastr" */;
 			developmentRegion = en;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* KeyCastr */;
+			mainGroup = C7530FA0D04D3BCA2601BBC9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3D0461B3EED0872D9C14149A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AF6DD3FD2586E03A00EDC9D4 /* Products */;
-					ProjectRef = AF6DD3FC2586E03A00EDC9D4 /* ShortcutRecorder.xcodeproj */;
-				},
-				{
-					ProductGroup = AF6DD4092586E04C00EDC9D4 /* Products */;
-					ProjectRef = AF6DD4082586E04C00EDC9D4 /* Sparkle.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				3D1646B50F43DBD700CA65AD /* KCVisualizer */,
-				3D1648AB0F451D4500CA65AD /* Svelte */,
-				3D1646590F43D6E700CA65AD /* KCDefaultVisualizer */,
-				8D1107260486CEB800E47090 /* KeyCastr */,
-				AFC172182377CFF500292155 /* KCVisualizerTests */,
+				F583883AB72367CC8BBBF8AF /* KCDefaultVisualizer */,
+				FE49104CC0F6239361197347 /* KeyCastr */,
+				E00D75838BBF99FB415223AB /* KeyCastrTests */,
+				81294CA39D5300A0C1CADDFE /* Svelte */,
+				9627C29F6E47FC6DD39C59CA /* Visualizer */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		AF0FB731274874C4001B292E /* Inspector.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Inspector.app;
-			remoteRef = AF0FB730274874C4001B292E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF0FB733274874C4001B292E /* Unit Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Unit Tests.xctest";
-			remoteRef = AF0FB732274874C4001B292E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF2B004C287B84DD00309761 /* Installer.xpc */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.xpc-service";
-			path = Installer.xpc;
-			remoteRef = AF2B004B287B84DD00309761 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF2B004E287B84DD00309761 /* InstallerConnection.xpc */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.xpc-service";
-			path = InstallerConnection.xpc;
-			remoteRef = AF2B004D287B84DD00309761 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF2B0050287B84DD00309761 /* InstallerStatus.xpc */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.xpc-service";
-			path = InstallerStatus.xpc;
-			remoteRef = AF2B004F287B84DD00309761 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF2B0052287B84DD00309761 /* Downloader.xpc */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.xpc-service";
-			path = Downloader.xpc;
-			remoteRef = AF2B0051287B84DD00309761 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF2B0054287B84DD00309761 /* TestAppHelper.xpc */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.xpc-service";
-			path = TestAppHelper.xpc;
-			remoteRef = AF2B0053287B84DD00309761 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF2B0056287B84DD00309761 /* sparkle.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = sparkle.app;
-			remoteRef = AF2B0055287B84DD00309761 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF2B0058287B84DD00309761 /* Updater.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Updater.app;
-			remoteRef = AF2B0057287B84DD00309761 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD4032586E03A00EDC9D4 /* ShortcutRecorder.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ShortcutRecorder.framework;
-			remoteRef = AF6DD4022586E03A00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD41C2586E04C00EDC9D4 /* Sparkle.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Sparkle.framework;
-			remoteRef = AF6DD41B2586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD41E2586E04C00EDC9D4 /* Sparkle Test App.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Sparkle Test App.app";
-			remoteRef = AF6DD41D2586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD4202586E04C00EDC9D4 /* Sparkle Unit Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Sparkle Unit Tests.xctest";
-			remoteRef = AF6DD41F2586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD4222586E04C00EDC9D4 /* BinaryDelta */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = BinaryDelta;
-			remoteRef = AF6DD4212586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD4242586E04C00EDC9D4 /* Autoupdate */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = Autoupdate;
-			remoteRef = AF6DD4232586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD4262586E04C00EDC9D4 /* UI Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "UI Tests.xctest";
-			remoteRef = AF6DD4252586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD42A2586E04C00EDC9D4 /* generate_appcast */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = generate_appcast;
-			remoteRef = AF6DD4292586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD42C2586E04C00EDC9D4 /* generate_keys */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = generate_keys;
-			remoteRef = AF6DD42B2586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD42E2586E04C00EDC9D4 /* sign_update */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = sign_update;
-			remoteRef = AF6DD42D2586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD4302586E04C00EDC9D4 /* libbsdiff.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libbsdiff.a;
-			remoteRef = AF6DD42F2586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AF6DD4322586E04C00EDC9D4 /* libed25519.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libed25519.a;
-			remoteRef = AF6DD4312586E04C00EDC9D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		3D1646560F43D6E700CA65AD /* Resources */ = {
+		F2CA8F96F69CDDA82C44D85F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324AD36C18A447EB8EDCE7B7 /* KCDefaultVisualizer.nib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D1646B20F43DBD700CA65AD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D1648A80F451D4500CA65AD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D1648B90F451DAA00CA65AD /* Svelte.nib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D1107290486CEB800E47090 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
-				AF6B80EB25AA7ACE00C6FA9D /* KeyCastrAbout.qtz in Resources */,
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				3D3F52A70F30BF1E001C7272 /* KeyCastr.icns in Resources */,
-				3D3F548A0F30F37E001C7272 /* GeneralIcon.tif in Resources */,
-				AE39388C1BB73B36005458A6 /* KeyCastrStatusItem@2x.png in Resources */,
-				3D3F548B0F30F37E001C7272 /* DisplayIcon.tif in Resources */,
-				3D3F548E0F30F3C7001C7272 /* UpdateIcon.tif in Resources */,
-				3D1640500F3BCC6900CA65AD /* KeyCastrStatusItemActive.png in Resources */,
-				3D1640510F3BCC6900CA65AD /* KeyCastrStatusItemInactive.png in Resources */,
-				AE39388D1BB73B36005458A6 /* KeyCastrStatusItemActive@2x.png in Resources */,
-				AE39388B1BB73B36005458A6 /* KeyCastrStatusItem.png in Resources */,
-				AE39388E1BB73B36005458A6 /* KeyCastrStatusItemInactive@2x.png in Resources */,
-				3D1640600F3BCEC900CA65AD /* KeyCastrInactive.icns in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFC172172377CFF500292155 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				97FC8FC1EF466CC69BE4AE46 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		824A2C66A3BB810F4CB9FAF1 /* Embed PlugIns */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/KCDefaultVisualizer.kcplugin",
+				"$(TARGET_BUILD_DIR)/Svelte.kcplugin",
+			);
+			name = "Embed PlugIns";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).app/Contents/PlugIns/KCDefaultVisualizer.kcplugin",
+				"$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).app/Contents/PlugIns/Svelte.kcplugin",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nPLUGIN_DIR=\"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/PlugIns\"\nmkdir -p \"$PLUGIN_DIR\"\nfor plugin in KCDefaultVisualizer Svelte; do\n  SRC=\"${TARGET_BUILD_DIR}/${plugin}.kcplugin\"\n  if [ -d \"$SRC\" ]; then\n    rsync -a --delete \"$SRC\" \"$PLUGIN_DIR/\"\n    /usr/bin/codesign --force --sign - --timestamp=none \"$PLUGIN_DIR/${plugin}.kcplugin\" || true\n  fi\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3D1646570F43D6E700CA65AD /* Sources */ = {
+		5FE5F51AADB27BFADB37F0F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324AD844390E162E4229CD1B /* KCDefaultVisualizer.m in Sources */,
-				324ADBCB6A0995C04527E1D8 /* NSBezierPath+RoundedRect.m in Sources */,
+				B025A1920BD83964A77361A4 /* App.swift in Sources */,
+				B6F96B4FF7434895FE6C77A9 /* AppController.swift in Sources */,
+				7ED96767853533AE70A2B3FD /* PreferencesWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D1646B30F43DBD700CA65AD /* Sources */ = {
+		7382D045FA06058B5B416323 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1646C20F43DC4700CA65AD /* KCVisualizer.m in Sources */,
-				AF5457292C0CDB2E00064C82 /* KCColorValueTransformer.m in Sources */,
-				AF7B1CF32C22376100C8C145 /* NSUserDefaults+Utility.m in Sources */,
-				AFF68CBA2C05776000B98D92 /* KCUserDefaultsMigration.m in Sources */,
-				3D1646C40F43DC4C00CA65AD /* KCKeystroke.m in Sources */,
-				3D1646C70F43DC5100CA65AD /* KCEventTransformer.m in Sources */,
-				324ADE7F91EC0CAFD38BA4BA /* KCMouseEventVisualizer.m in Sources */,
-				324ADDDF7A11FD8A03BE1995 /* KCMouseEvent.m in Sources */,
-				324AD7AC994A031550F38591 /* KCKeycastrEvent.m in Sources */,
+				7A8CB3ECAAE3FC6DB4804939 /* SvelteView.swift in Sources */,
+				AC007C41BD53A9E9204D2A98 /* SvelteVisualizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D1648A90F451D4500CA65AD /* Sources */ = {
+		7E6987B2540FD65AA1EA5F16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1648BC0F451DC300CA65AD /* SvelteVisualizer.m in Sources */,
+				EF13773B009B8C5F604B94CB /* EventTap.swift in Sources */,
+				BC14C3A915D7AEF917CE824A /* EventTransformer.swift in Sources */,
+				3160AA0560CCD3C0E5693037 /* KeycastrEvent.swift in Sources */,
+				BD5A8A6BF80D896165B81209 /* Keystroke.swift in Sources */,
+				B24908CA656F9F826F482B98 /* MouseEvent.swift in Sources */,
+				F78C1E440F05A1E8CA7A3162 /* MouseEventVisualizer.swift in Sources */,
+				EE76971DC34F3D767E2AF2B7 /* UserDefaultsMigration.swift in Sources */,
+				FE4727FD240E7C156B11F213 /* Visualizer.swift in Sources */,
+				9463D0BAF025423138C1466B /* VisualizerRegistry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D11072C0486CEB800E47090 /* Sources */ = {
+		8F7455D517CD1CFC094BFE28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				3D3F52EB0F30CB13001C7272 /* KCPrefsWindowController.m in Sources */,
-				3D3F540C0F30E8E7001C7272 /* KCEventTap.m in Sources */,
-				3D1646EB0F43DD3000CA65AD /* KCAppController.m in Sources */,
+				A9142FD1BB762031255A0B4E /* BezelWindow.swift in Sources */,
+				EBDB05F01BCE9A963D37664B /* DefaultVisualizer.swift in Sources */,
+				B5D39A9C4C3745F966FA0F06 /* DefaultVisualizerTests.swift in Sources */,
+				98B00013CE8D3BA97AAA2F75 /* KeystrokeConversionTests.swift in Sources */,
+				EDE21513A424DAF2A79A8FA0 /* MouseEventVisualizerTests.swift in Sources */,
+				BCF871FFE6CF9D117E7DBCB2 /* SvelteView.swift in Sources */,
+				22CD39AFA7F346E340D4F13A /* SvelteVisualizer.swift in Sources */,
+				698D177C868A009D4AC4CA90 /* UserDefaultsMigrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFC172152377CFF500292155 /* Sources */ = {
+		F486EAA85DD683C6A79DFA04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFAA2BB82A991B39007C7BAA /* KCMouseEventVisualizerTests.m in Sources */,
-				AF20BE732C1E21B3008B758E /* KCDefaultVisualizerTests.m in Sources */,
-				AFF68CA12C05480600B98D92 /* KCUserDefaultsMigrationTests.m in Sources */,
-				AFC1721C2377CFF500292155 /* KCKeystrokeConversionTests.m in Sources */,
+				E0B6738603A71987F5613E8E /* BezelWindow.swift in Sources */,
+				68B0C925A89BC5D12684A1A8 /* DefaultVisualizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3D1646D50F43DCB200CA65AD /* PBXTargetDependency */ = {
+		0CA8787C823298B4DE7C6D1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D1646B50F43DBD700CA65AD /* KCVisualizer */;
-			targetProxy = 3D1646D40F43DCB200CA65AD /* PBXContainerItemProxy */;
+			target = 9627C29F6E47FC6DD39C59CA /* Visualizer */;
+			targetProxy = A3F1F2982A0E8151911777B3 /* PBXContainerItemProxy */;
 		};
-		3D1646D70F43DCB700CA65AD /* PBXTargetDependency */ = {
+		18F9AFD55CFF1A2B9EAE8964 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D1646B50F43DBD700CA65AD /* KCVisualizer */;
-			targetProxy = 3D1646D60F43DCB700CA65AD /* PBXContainerItemProxy */;
+			target = 9627C29F6E47FC6DD39C59CA /* Visualizer */;
+			targetProxy = 7E00594BE51829DD11BA1DE8 /* PBXContainerItemProxy */;
 		};
-		3D1648B50F451D6F00CA65AD /* PBXTargetDependency */ = {
+		4B5AA6C606B4C5B4B91EED82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D1646B50F43DBD700CA65AD /* KCVisualizer */;
-			targetProxy = 3D1648B40F451D6F00CA65AD /* PBXContainerItemProxy */;
+			target = 9627C29F6E47FC6DD39C59CA /* Visualizer */;
+			targetProxy = 38ACC022535A4530F1341A01 /* PBXContainerItemProxy */;
 		};
-		AF6DD4342586E0A700EDC9D4 /* PBXTargetDependency */ = {
+		4BBF9F04D570542B4DDBE242 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Sparkle;
-			targetProxy = AF6DD4332586E0A700EDC9D4 /* PBXContainerItemProxy */;
+			target = 81294CA39D5300A0C1CADDFE /* Svelte */;
+			targetProxy = 45684427F9F9619DA7A4CBBE /* PBXContainerItemProxy */;
 		};
-		AF6DD4372586E0BA00EDC9D4 /* PBXTargetDependency */ = {
+		BC16396D60880F8899D79E9C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ShortcutRecorder.framework;
-			targetProxy = AF6DD4362586E0BA00EDC9D4 /* PBXContainerItemProxy */;
+			target = F583883AB72367CC8BBBF8AF /* KCDefaultVisualizer */;
+			targetProxy = 9D8C2F4C8FAB8ADF988C84FB /* PBXContainerItemProxy */;
 		};
-		AF7B1CF92C22647700C8C145 /* PBXTargetDependency */ = {
+		E8A3ED221DC469C3489130A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D1646590F43D6E700CA65AD /* KCDefaultVisualizer */;
-			targetProxy = AF7B1CF82C22647700C8C145 /* PBXContainerItemProxy */;
-		};
-		AF7B1CFB2C22647700C8C145 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D1648AB0F451D4500CA65AD /* Svelte */;
-			targetProxy = AF7B1CFA2C22647700C8C145 /* PBXContainerItemProxy */;
-		};
-		AF7B1CFD2C22648800C8C145 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D1646590F43D6E700CA65AD /* KCDefaultVisualizer */;
-			targetProxy = AF7B1CFC2C22648800C8C145 /* PBXContainerItemProxy */;
-		};
-		AF7B1CFF2C22648800C8C145 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D1648AB0F451D4500CA65AD /* Svelte */;
-			targetProxy = AF7B1CFE2C22648800C8C145 /* PBXContainerItemProxy */;
-		};
-		AFC172202377CFF500292155 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D1646B50F43DBD700CA65AD /* KCVisualizer */;
-			targetProxy = AFC1721F2377CFF500292155 /* PBXContainerItemProxy */;
+			target = 9627C29F6E47FC6DD39C59CA /* Visualizer */;
+			targetProxy = 0FB8DCA1CFD456A4D8EDAF3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF5457412C0CE25700064C82 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF5457422C0CE26D00064C82 /* Base */,
-			);
-			name = MainMenu.nib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		3D16465C0F43D6E800CA65AD /* Debug */ = {
+		0CA147163C47D67BD91F29EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "KCDefaultVisualizer-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCDefaultVisualizer;
-				PRODUCT_NAME = KCDefaultVisualizer;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				WRAPPER_EXTENSION = kcplugin;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		3D16465D0F43D6E800CA65AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "KCDefaultVisualizer-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCDefaultVisualizer;
-				PRODUCT_NAME = KCDefaultVisualizer;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = kcplugin;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		3D1646B80F43DBD800CA65AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "KCVisualizer-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCVisualizer;
-				PRODUCT_NAME = KCVisualizer;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		3D1646B90F43DBD800CA65AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "KCVisualizer-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCVisualizer;
-				PRODUCT_NAME = KCVisualizer;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		3D1648AE0F451D4500CA65AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Svelte-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Svelte;
-				PRODUCT_NAME = Svelte;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				WRAPPER_EXTENSION = kcplugin;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		3D1648AF0F451D4500CA65AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Svelte-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Svelte;
-				PRODUCT_NAME = Svelte;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = kcplugin;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		AFC172222377CFF500292155 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = KCVisualizerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCVisualizerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastrTests;
+				PRODUCT_NAME = KeyCastrTests;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		AFC172242377CFF500292155 /* Release */ = {
+		14E7307FFBECC9C5A82E9443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundlePackageType = BNDL;
+				INFOPLIST_KEY_NSPrincipalClass = DefaultVisualizerFactory;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/../../../../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCDefaultVisualizer;
+				PRODUCT_NAME = KCDefaultVisualizer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = kcplugin;
+			};
+			name = Release;
+		};
+		196F835DA038852E6036DB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1407,119 +586,160 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = KCVisualizerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCVisualizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5;
 			};
 			name = Release;
 		};
-		C01FCF4B08A954540054247B /* Debug */ = {
+		54A2D94FF17A8C2A8D6E29FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = KeyCastr.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = "$(MARKETING_VERSION)";
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 68TUCLNAPS;
-				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = KeyCastr_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KeyCastr;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INSTALL_PATH = "$(HOME)/Applications";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.10.5;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastrTests;
+				PRODUCT_NAME = KeyCastrTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6C6BA950FA52122B5753C8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyCastr.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2009-2026 Stephen Deken, Andrew Kitchen, and contributors.";
+				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "KeyCastr needs Input Monitoring to capture keystrokes for on-screen display.";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastr;
 				PRODUCT_NAME = KeyCastr;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		C01FCF4C08A954540054247B /* Release */ = {
+		8BE0CA5915D4C95AD96C7AAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = KeyCastr.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = "$(MARKETING_VERSION)";
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 68TUCLNAPS;
-				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = KeyCastr_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KeyCastr;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INSTALL_PATH = "$(HOME)/Applications";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundlePackageType = BNDL;
+				INFOPLIST_KEY_NSPrincipalClass = SvelteVisualizerFactory;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
+					"@loader_path/../../../../Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.10.5;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr;
-				PRODUCT_NAME = KeyCastr;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "KeyCastr Developer ID Distribution";
-				WRAPPER_EXTENSION = app;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Svelte;
+				PRODUCT_NAME = Svelte;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = kcplugin;
 			};
 			name = Release;
 		};
-		C01FCF4F08A954540054247B /* Debug */ = {
+		CC490983A8AE306B72CAC347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Visualizer;
+				PRODUCT_NAME = Visualizer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		EC743FE949AC20F0070B8311 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -1527,127 +747,195 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5;
 			};
 			name = Debug;
 		};
-		C01FCF5008A954540054247B /* Release */ = {
+		F72B92DA00515513E51D49BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				DEAD_CODE_STRIPPING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundlePackageType = BNDL;
+				INFOPLIST_KEY_NSPrincipalClass = SvelteVisualizerFactory;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/../../../../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Svelte;
+				PRODUCT_NAME = Svelte;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = kcplugin;
+			};
+			name = Debug;
+		};
+		F8C48E47063AD130B3E43014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundlePackageType = BNDL;
+				INFOPLIST_KEY_NSPrincipalClass = DefaultVisualizerFactory;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/../../../../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCDefaultVisualizer;
+				PRODUCT_NAME = KCDefaultVisualizer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = kcplugin;
+			};
+			name = Debug;
+		};
+		FBF111E0742EA36F078FC683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyCastr.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2009-2026 Stephen Deken, Andrew Kitchen, and contributors.";
+				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "KeyCastr needs Input Monitoring to capture keystrokes for on-screen display.";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastr;
+				PRODUCT_NAME = KeyCastr;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FDEC17BC3FA3DDA4408B67FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Visualizer;
+				PRODUCT_NAME = Visualizer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D16465E0F43D6E800CA65AD /* Build configuration list for PBXNativeTarget "KCDefaultVisualizer" */ = {
+		18C462C6F16FFEFAA30F8A57 /* Build configuration list for PBXProject "KeyCastr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D16465C0F43D6E800CA65AD /* Debug */,
-				3D16465D0F43D6E800CA65AD /* Release */,
+				EC743FE949AC20F0070B8311 /* Debug */,
+				196F835DA038852E6036DB70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D1646BA0F43DBD800CA65AD /* Build configuration list for PBXNativeTarget "KCVisualizer" */ = {
+		5FF9A78760B72909BD8EC3F4 /* Build configuration list for PBXNativeTarget "KCDefaultVisualizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D1646B80F43DBD800CA65AD /* Debug */,
-				3D1646B90F43DBD800CA65AD /* Release */,
+				F8C48E47063AD130B3E43014 /* Debug */,
+				14E7307FFBECC9C5A82E9443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D1648B00F451D4500CA65AD /* Build configuration list for PBXNativeTarget "Svelte" */ = {
+		814F94DBF576E5829652B241 /* Build configuration list for PBXNativeTarget "KeyCastr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D1648AE0F451D4500CA65AD /* Debug */,
-				3D1648AF0F451D4500CA65AD /* Release */,
+				6C6BA950FA52122B5753C8EF /* Debug */,
+				FBF111E0742EA36F078FC683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFC172212377CFF500292155 /* Build configuration list for PBXNativeTarget "KCVisualizerTests" */ = {
+		C2AC94EF8508C968122BEE55 /* Build configuration list for PBXNativeTarget "KeyCastrTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFC172222377CFF500292155 /* Debug */,
-				AFC172242377CFF500292155 /* Release */,
+				0CA147163C47D67BD91F29EB /* Debug */,
+				54A2D94FF17A8C2A8D6E29FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "KeyCastr" */ = {
+		C68686FEC53004C46A7ADDB9 /* Build configuration list for PBXNativeTarget "Svelte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C01FCF4B08A954540054247B /* Debug */,
-				C01FCF4C08A954540054247B /* Release */,
+				F72B92DA00515513E51D49BD /* Debug */,
+				8BE0CA5915D4C95AD96C7AAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "KeyCastr" */ = {
+		CAF84F39C09A49498235F144 /* Build configuration list for PBXNativeTarget "Visualizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C01FCF4F08A954540054247B /* Debug */,
-				C01FCF5008A954540054247B /* Release */,
+				CC490983A8AE306B72CAC347 /* Debug */,
+				FDEC17BC3FA3DDA4408B67FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+	rootObject = 7AB83407E004EDD0EDBCC46F /* Project object */;
 }
