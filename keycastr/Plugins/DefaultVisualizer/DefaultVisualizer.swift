@@ -145,14 +145,11 @@ public final class DefaultVisualizer: NSObject, Visualizer {
     public func noteKeyEvent(_ event: KeycastrEvent) {
         guard let keystroke = event as? Keystroke else { return }
         if !keystroke.isCommand && shouldOnlyDisplayCommandKeys {
-            NSLog("[KeyCastr] Default: filtered (commandKeysOnly): %@", keystroke.convertToString())
             return
         }
         if !keystroke.isModified && shouldOnlyDisplayModifiedKeys {
-            NSLog("[KeyCastr] Default: filtered (modifiedOnly): %@", keystroke.convertToString())
             return
         }
-        NSLog("[KeyCastr] Default: rendering %@", keystroke.convertToString())
         bezelWindow.add(keystroke: keystroke)
     }
 

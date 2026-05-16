@@ -255,7 +255,6 @@ final class AppController: NSObject, NSApplicationDelegate {
 extension AppController: EventTapDelegate {
     func eventTap(_ tap: EventTap, noteKeystroke keystroke: Keystroke) {
         guard isCapturing else { return }
-        NSLog("[KeyCastr] keystroke: %@ -> visualizer=%@", keystroke.convertToString(), currentVisualizer?.visualizerName ?? "(nil)")
         currentVisualizer?.noteKeyEvent(keystroke)
     }
 
