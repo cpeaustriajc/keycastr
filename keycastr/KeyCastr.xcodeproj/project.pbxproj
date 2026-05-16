@@ -110,7 +110,7 @@
 		776102368071804A6E43C8A2 /* KeycastrEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycastrEvent.swift; sourceTree = "<group>"; };
 		7D9A3B4FE27E39D327951869 /* MouseEventVisualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEventVisualizerTests.swift; sourceTree = "<group>"; };
 		8A64E23EC423E98958910CBB /* Visualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Visualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.kcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCDefaultVisualizer.kcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCDefaultVisualizer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F59B95CE8E10F2064B9D1EF /* UserDefaultsMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsMigrationTests.swift; sourceTree = "<group>"; };
 		90B84922B8519929DA9CA4E1 /* BezelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelWindow.swift; sourceTree = "<group>"; };
 		99C8E20C6D75878988F71B9B /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		B26C397CA45D9B37D1BD3852 /* KeystrokeConversionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystrokeConversionTests.swift; sourceTree = "<group>"; };
 		B3B64671602DB0E3910EEA3D /* KeyCastr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyCastr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9ED0D37FE6EFAD2B7146F57 /* DefaultVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVisualizer.swift; sourceTree = "<group>"; };
-		BB6E2F89CB468E42BF5721EF /* Svelte.kcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Svelte.kcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6E2F89CB468E42BF5721EF /* Svelte.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Svelte.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF49F3125CBE2FAF0C70208F /* SvelteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvelteView.swift; sourceTree = "<group>"; };
 		E382CC61CD9A7DE9D4658E7F /* KeyCastrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyCastrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E905FFC0BA88B9246923135F /* MouseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseEvent.swift; sourceTree = "<group>"; };
@@ -166,10 +166,10 @@
 		3D0461B3EED0872D9C14149A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.kcplugin */,
+				8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.bundle */,
 				B3B64671602DB0E3910EEA3D /* KeyCastr.app */,
 				E382CC61CD9A7DE9D4658E7F /* KeyCastrTests.xctest */,
-				BB6E2F89CB468E42BF5721EF /* Svelte.kcplugin */,
+				BB6E2F89CB468E42BF5721EF /* Svelte.bundle */,
 				8A64E23EC423E98958910CBB /* Visualizer.framework */,
 			);
 			name = Products;
@@ -278,7 +278,7 @@
 			packageProductDependencies = (
 			);
 			productName = Svelte;
-			productReference = BB6E2F89CB468E42BF5721EF /* Svelte.kcplugin */;
+			productReference = BB6E2F89CB468E42BF5721EF /* Svelte.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		9627C29F6E47FC6DD39C59CA /* Visualizer */ = {
@@ -333,7 +333,7 @@
 			packageProductDependencies = (
 			);
 			productName = KCDefaultVisualizer;
-			productReference = 8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.kcplugin */;
+			productReference = 8B5D8606C56DFE5F5482205A /* KCDefaultVisualizer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		FE49104CC0F6239361197347 /* KeyCastr */ = {
@@ -367,7 +367,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2640;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					81294CA39D5300A0C1CADDFE = {
 						ProvisioningStyle = Automatic;
@@ -429,15 +429,11 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(TARGET_BUILD_DIR)/KCDefaultVisualizer.kcplugin",
-				"$(TARGET_BUILD_DIR)/Svelte.kcplugin",
 			);
 			name = "Embed PlugIns";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).app/Contents/PlugIns/KCDefaultVisualizer.kcplugin",
-				"$(TARGET_BUILD_DIR)/$(PRODUCT_NAME).app/Contents/PlugIns/Svelte.kcplugin",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -551,7 +547,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastrTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.KeyCastrTests;
 				PRODUCT_NAME = KeyCastrTests;
 				SDKROOT = macosx;
 			};
@@ -560,6 +556,7 @@
 		14E7307FFBECC9C5A82E9443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_KEY_CFBundlePackageType = BNDL;
 				INFOPLIST_KEY_NSPrincipalClass = DefaultVisualizerFactory;
@@ -567,7 +564,7 @@
 					"@loader_path/../../../../Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCDefaultVisualizer;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.KCDefaultVisualizer;
 				PRODUCT_NAME = KCDefaultVisualizer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -578,6 +575,7 @@
 		196F835DA038852E6036DB70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -612,13 +610,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 0.11.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -629,12 +626,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 0.11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_STRICT_CONCURRENCY = minimal;
@@ -653,7 +649,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastrTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.KeyCastrTests;
 				PRODUCT_NAME = KeyCastrTests;
 				SDKROOT = macosx;
 			};
@@ -668,11 +664,12 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2009-2026 Stephen Deken, Andrew Kitchen, and contributors.";
-				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "KeyCastr needs Input Monitoring to capture keystrokes for on-screen display.";
 				INFOPLIST_KEY_NSMainStoryboardFile = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastr;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.KeyCastr;
 				PRODUCT_NAME = KeyCastr;
 				SDKROOT = macosx;
 			};
@@ -681,6 +678,7 @@
 		8BE0CA5915D4C95AD96C7AAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_KEY_CFBundlePackageType = BNDL;
 				INFOPLIST_KEY_NSPrincipalClass = SvelteVisualizerFactory;
@@ -688,7 +686,7 @@
 					"@loader_path/../../../../Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Svelte;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.Svelte;
 				PRODUCT_NAME = Svelte;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -707,14 +705,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Visualizer;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.Visualizer;
 				PRODUCT_NAME = Visualizer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -725,6 +721,7 @@
 		EC743FE949AC20F0070B8311 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -759,13 +756,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 0.11.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -782,13 +778,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 0.11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_STRICT_CONCURRENCY = minimal;
@@ -800,6 +795,7 @@
 		F72B92DA00515513E51D49BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_KEY_CFBundlePackageType = BNDL;
 				INFOPLIST_KEY_NSPrincipalClass = SvelteVisualizerFactory;
@@ -807,7 +803,7 @@
 					"@loader_path/../../../../Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Svelte;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.Svelte;
 				PRODUCT_NAME = Svelte;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -818,6 +814,7 @@
 		F8C48E47063AD130B3E43014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_KEY_CFBundlePackageType = BNDL;
 				INFOPLIST_KEY_NSPrincipalClass = DefaultVisualizerFactory;
@@ -825,7 +822,7 @@
 					"@loader_path/../../../../Frameworks",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KCDefaultVisualizer;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.KCDefaultVisualizer;
 				PRODUCT_NAME = KCDefaultVisualizer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -842,11 +839,12 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2009-2026 Stephen Deken, Andrew Kitchen, and contributors.";
-				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "KeyCastr needs Input Monitoring to capture keystrokes for on-screen display.";
 				INFOPLIST_KEY_NSMainStoryboardFile = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.KeyCastr;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.KeyCastr;
 				PRODUCT_NAME = KeyCastr;
 				SDKROOT = macosx;
 			};
@@ -863,14 +861,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.keycastr.Visualizer;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.cpeaustriajc.keycastr.Visualizer;
 				PRODUCT_NAME = Visualizer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
